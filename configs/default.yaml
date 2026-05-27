@@ -1,0 +1,21 @@
+fields:
+  id: sample_id
+  text: text
+  prompt: prompt
+  candidate: candidate
+  source: source
+  language: language
+  pipeline_type: pipeline_type
+  doc_id: doc_id
+  target: target
+  target_index: target_index
+  evidence: evidence
+  summary: summary
+
+thresholds:
+  long_context_tokens: 32768
+  ultra_long_context_tokens: 131072
+  info_density_low: 0.60
+  high_repetition: 0.25
+  html_noise: 0.05
+  weird_char: 0.02
