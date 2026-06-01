@@ -1,10 +1,19 @@
+cat > .gitignore <<'EOF'
 # generated reports and metrics
 outputs/
+output/
+analysis_output/
+reports/
 
 # real/private data
 data/
 real_data/
+examples/0601数据/
+*.jsonl
+*.jsonl.gz
 *.parquet
+*.csv
+*.html
 *.log
 
 # python cache
@@ -20,4 +29,5 @@ venv/
 # secrets
 .env
 *.key
-*.pem*.jsonl
+*.pem
+EOF
