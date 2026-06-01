@@ -65,7 +65,7 @@ def run_pipeline(args):
 
     write_sample_metrics(metrics_df, output_dir / "sample_metrics.csv")
     write_dataset_summary(summary, output_dir / "dataset_summary.csv")
-    generate_report(metrics_df, summary, output_dir / "report.html")
+    generate_report(metrics_df, summary, output_dir / "report.html", raw_df=df)
 
     print(f"Done. Outputs written to {output_dir}/")
     print(f"  - sample_metrics.csv ({len(metrics_df)} samples)")

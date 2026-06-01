@@ -264,13 +264,13 @@ class TestEndToEnd:
         run_pipeline(args)
 
         html = (tmp_path / "report.html").read_text()
-        assert "Executive Summary" in html
-        assert "Field Availability" in html
-        assert "General Data Profile" in html
-        assert "Quality Risk" in html
-        assert "Task Fit" in html
-        assert "Known Limitations" in html
-        assert "Entry Recommendations" in html
+        assert "核心结论概览" in html
+        assert "字段可得性检查" in html
+        assert "通用数据画像" in html
+        assert "质量风险分析" in html
+        assert "任务适配分析" in html
+        assert "当前版本限制" in html
+        assert "入训建议" in html
 
 
 class TestTemplateRatioNA:

@@ -1,0 +1,23 @@
+# generated reports and metrics
+outputs/
+
+# real/private data
+data/
+real_data/
+*.parquet
+*.log
+
+# python cache
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+
+# system files
+.DS_Store
+
+# secrets
+.env
+*.key
+*.pem*.jsonl
